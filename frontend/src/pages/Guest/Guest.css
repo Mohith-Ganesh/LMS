@@ -1,0 +1,148 @@
+/* Container */
+.guest-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.unt-logo{
+    height: 150px;
+    width: 150px;
+}
+
+/* Navigation Bar */
+.guest-nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.guest-button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.guest-button:hover {
+    background-color: #45a049;
+}
+
+/* Book List */
+.book-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+.book-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.book-item:hover {
+    transform: scale(1.05);
+}
+
+.book-item h4 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.book-item p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.book-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .guest-container {
+        padding: 10px;
+    }
+
+    .guest-nav {
+        justify-content: center;
+    }
+
+    .guest-button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .book-list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the grid for tablets */
+    }
+
+    .book-item h4 {
+        font-size: 16px;
+    }
+
+    .book-item p {
+        font-size: 12px;
+    }
+
+    .book-item button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    .guest-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .guest-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .book-list {
+        grid-template-columns: 1fr; /* Single column on small devices */
+    }
+
+    .book-item {
+        padding: 10px;
+    }
+
+    .book-item h4 {
+        font-size: 14px;
+    }
+
+    .book-item p {
+        font-size: 12px;
+    }
+
+    .book-img {
+        margin-bottom: 5px;
+    }
+
+    .guest-container h2, .guest-container h3 {
+        text-align: center;
+        font-size: 18px;
+    }
+}

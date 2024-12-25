@@ -1,0 +1,98 @@
+/* Global container */
+.admin-dashboard-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Form Styles */
+.admin-dashboard-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.admin-dashboard-div {
+    flex: 1 1 300px;  /* Flexbox to allow shrinking and wrapping on smaller screens */
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-dashboard-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.admin-dashboard-input, .admin-dashboard-textarea, .admin-dashboard-button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.admin-dashboard-button {
+    flex: 1 1 100%;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.admin-dashboard-button:hover {
+    background-color: #45a049;
+}
+
+/* Book List Styles */
+.admin-dashboard-ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.admin-dashboard-li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.admin-dashboard-li-button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.admin-dashboard-li-button:hover {
+    background-color: #005f75;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .admin-dashboard-container {
+        padding: 10px;
+    }
+
+    /* Stack form fields vertically on small screens */
+    .admin-dashboard-div {
+        flex: 1 1 100%;
+    }
+
+    /* Make buttons full width on small screens */
+    .admin-dashboard-li-button {
+        flex: 1 1 100%;
+        margin-top: 5px;
+    }
+
+    .admin-dashboard-li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

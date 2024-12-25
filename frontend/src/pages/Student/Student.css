@@ -1,0 +1,259 @@
+/* Container */
+.dashboard-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-info {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.view-taken-books-button{
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.logout-button {
+    padding: 10px 15px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Username Input */
+.username-input {
+    margin-bottom: 20px;
+}
+
+.username-input label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.username-input input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Book List Styles */
+.book-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.book-item {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.book-item h4 {
+    margin: 0 0 10px;
+}
+
+.book-item p {
+    margin: 5px 0;
+}
+
+.book-item img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.book-item button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.book-item button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.book-item button:hover:not(:disabled) {
+    background-color: #45a049;
+}
+
+/* Existing Reviews Section */
+.existing-reviews {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.existing-reviews h3 {
+    margin-bottom: 10px;
+}
+
+.existing-reviews ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.existing-reviews li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Review Form */
+.review-form {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.review-form h3 {
+    margin-bottom: 10px;
+}
+
+.review-form textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.review-form select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.review-form button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.review-form button:hover {
+    background-color: #45a049;
+}
+
+/* Pagination Controls */
+.pagination-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.pagination-controls button {
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination-controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination-controls span {
+    margin: 0 20px;
+    line-height: 2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 10px;
+    }
+
+    .book-item {
+        flex-direction: column;
+    }
+
+    .pagination-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pagination-controls button {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
+    .username-input input {
+        max-width: 100%;
+    }
+
+    .review-form textarea {
+        height: 80px;
+    }
+}
+
+@media (max-width: 576px) {
+    .book-item {
+        padding: 10px;
+    }
+
+    .book-item button {
+        width: 100%;
+    }
+
+    .pagination-controls {
+        width: 100%;
+    }
+    
+    .pagination-controls span {
+        margin: 10px 0;
+    }
+}
